@@ -5,6 +5,7 @@
   Time: 9:47
   To change this template use File | Settings | File Templates.
   https://javarush.ru/groups/posts/328-sozdanie-prostogo-veb-prilozhenija-na-servletakh-i-jsp-chastjh-1
+  http://www.javable.com/javaworld/03_00/01/
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html lang="en">
@@ -14,8 +15,17 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
+
 <body class="w3-light-grey">
 <div class="w3-container w3-blue-grey w3-opacity w3-right-align">
+    Please select a language:
+    <form action="i18nDemo.jsp" method="post">
+        English <input type="radio" name="lang" value="English" checked>
+        Ukrainian <input type="radio" name="lang" value="Ukrainian">
+        Russian <input type="radio" name="lang" value="Russian">
+
+        <input type="submit" value="Continue">
+    </form>
     <h1>Super app!</h1>
 </div>
 
